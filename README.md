@@ -65,7 +65,12 @@ def do_something(args):
 ```
 
 You can add as many arguments as you wish, the parameters
-have to follow the `argparse.add_argument` syntax.
+have to follow the `argparse.add_argument` syntax. Note
+that your function's name must be prefixed with `do_` in
+order for the parsing to work. It will just break the
+name of the function into a "tree" where each `_`-delimited
+word will be a leaf. So you can add more methods to your
+'user' endpoint.
 
 Finally to parse something, just call :
 ```python
