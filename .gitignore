@@ -1,0 +1,6 @@
+*.swp
+
+# Dist
+dist/
+build/
+*.egg-info/
