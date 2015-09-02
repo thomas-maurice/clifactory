@@ -65,13 +65,8 @@ class CommandLineInterface(object):
     
     def parse(self, line=None):
         """parses the line provided, if None then uses sys.argv"""
-        args = None
-        if args:
-            args = self.parser.parse_args(line)
-        else:
-            args = self.parser.parse_args()
-        
-        args.func(args)
+        args = self.parser.parse_args(args=line)
+        return args.func(args)
         
     
     def endpoint(self, *args):
