@@ -1,9 +1,21 @@
-clifacgtory
+clifactory
 ####################
+
+.. image:: https://badge.fury.io/py/clifactory.svg
+    :target: http://badge.fury.io/py/clifactory
 
 Writing CLI is **NOT** funny. Especially with all the
 argument parsing and shit. This is why this module exists.
 
+Installing
+==========
+
+.. code:: bash
+
+    $ pip install clifactory
+
+Basic Usage
+===========
 .. code:: python
 
     #!/usr/bin/env python
