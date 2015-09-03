@@ -5,7 +5,7 @@ import mock
 
 class TestCommandLineInterface(unittest.TestCase):
     def test_basic_routing(self):
-        from command_line_interface import CommandLineInterface
+        from clifactory import CommandLineInterface
         cli = CommandLineInterface()
 
         @cli.endpoint()
@@ -20,7 +20,7 @@ class TestCommandLineInterface(unittest.TestCase):
         self.assertEqual("1.7.2", cli.parse(["version"]))
 
     def test_nested_routing(self):
-        from command_line_interface import CommandLineInterface
+        from clifactory import CommandLineInterface
         cli = CommandLineInterface()
 
         @cli.endpoint()
@@ -33,4 +33,3 @@ class TestCommandLineInterface(unittest.TestCase):
 
         self.assertEqual("eth0", cli.parse(["link", "list"]))
         self.assertEqual("127.0.0.1", cli.parse(["addr", "list"]))
-

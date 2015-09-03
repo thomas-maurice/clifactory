@@ -1,4 +1,4 @@
-CommandLineInterface
+clifacgtory
 ####################
 
 Writing CLI is **NOT** funny. Especially with all the
@@ -9,7 +9,7 @@ argument parsing and shit. This is why this module exists.
     #!/usr/bin/env python
     # -*- coding: utf-8 -*-
 
-    from command_line_interface import CommandLineInterface, Argument
+    from clifactory import CommandLineInterface, Argument
 
     cli = CommandLineInterface()
     users = ["John Doe", "Dick Head"]
@@ -114,4 +114,3 @@ Licence
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
